@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Retroalimentacion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/miEstilo.css') }}" />
+  <script src="{{ url_for('static', filename='js/validacion.js') }}"></script>
+</head>
+
+<body>
+  <section class="titulo">
+    <p id="titulo">RETROALIMENTACION DE EMPLEADOS</p>
+  </section>
+  <section class="resto">
+    <div id="formadatos">
+      <div id="formatitulo">
+        <p>Datos empleado</p>
+      </div>
+      <div id="formainput">
+        <form name="loginForm" method="post" action="">
+          <input name="username" id="username" placeholder="ID" />
+          <input type="password" name="password" id="password" placeholder="Contraseña" />
+          <input id="consdatos" type="submit" value="Consultar datos" />
+        </form>
+      </div>
+    </div>
+    <div id="formaconsulta">
+      <div id="formatitcons">
+        <p>Dasempeño mensual</p>
+        <textarea name="nombre" id="nombre" placeholder="Nombres" cols="20" rows="1" readonly></textarea>
+        <textarea name="apellido" id="apellido" placeholder="Apellidos" cols="20" rows="1" readonly></textarea>
+        <textarea name="cargo" id="cargo" placeholder="Cargo" cols="20" rows="1" readonly></textarea>
+      </div>
+      <div id="formamensual">
+        <form name="loginForm" method="post" action="">
+          <textarea name="puntaje" id="puntaje" placeholder="Puntaje desempeño" cols="25" rows="1" readonly></textarea>
+          <textarea name="valpuntaje" id="valpuntaje" placeholder="Valor" cols="10" rows="1" readonly></textarea>
+        </form>
+      </div>
+      <div class="chart-wrap horizontal">
+        <div class="grid">
+          <div class="bar" style="--bar-value:85%;" data-name="Proyectos con fallas" title="Proyectos con fallas 85%"></div>
+          <div class="bar" style="--bar-value:23%;" data-name="Proyectos exitosos" title="Proyectos exitosos 23%"></div>
+          <div class="bar" style="--bar-value:7%;" data-name="Gestion del tiempo" title="Gestion del tiempo 7%"></div>
+          <div class="bar" style="--bar-value:38%;" data-name="Solucion incidentes" title="Solucion incidentes 38%"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <input id="salir" type="submit" value="Salir" />
+  </section>
+</body>
+
+</html>

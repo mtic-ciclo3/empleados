@@ -1,0 +1,171 @@
+.titulo{
+  background-color: #86c7e6;
+  padding: 10px;
+  text-align: center;
+  border: black 3px solid;
+}
+#titulo{
+  font-size: 30px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  }
+.resto{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+body{
+  background-color: #8d8d8d;
+}
+div p{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #000;
+  font-weight: bold;
+  }
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+#formadatos{
+  margin: 10px;
+  display: flex;
+  border: black 3px solid;
+  width: 600px;
+  height: 100px;
+  background: #c9c9c9;
+  flex-direction: column;
+  }
+#formatitulo{
+  display: flex;
+  border-style: none;
+  align-items: flex-start;
+  }
+#formainput{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+#consdatos{
+  border:#000 2px solid;
+  background-color: rgb(5, 87, 16);
+  color: white;
+}
+#formaconsulta{
+  border-top: 5px;
+  display: flex;
+  border: black 3px solid;
+  width: 900px;
+  height: 300px;
+  background: #c9c9c9;
+  flex-direction: column;
+  }
+#formatitcons{
+  display: flex;
+  border-style: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+}
+#formamensual{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  }
+#puntaje{
+  font-weight: bold;
+  background: #c0bfbf;
+}
+#salir{
+  margin-top: 10px;
+  border:#000 2px solid;
+  background-color: rgb(199, 23, 23);
+  color: white;  
+  font-size: 20px;
+}
+form input{
+    border-radius:1px;
+    padding: 2px;  
+  }
+
+.password
+  {
+    padding: inherit;
+  }
+
+  .chart-wrap {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 200px;
+    align-items: center;
+    --chart-width:420px;
+    --grid-color:#aaa;
+    --bar-color:#F16335;
+    --bar-thickness:20px;
+    --bar-rounded: 3px;
+    --bar-spacing:10px;
+    font-family:sans-serif;
+    width:var(--chart-width);
+}
+
+.chart-wrap.horizontal .grid{
+    transform:rotate(0deg);
+}
+
+.chart-wrap.horizontal .bar::after{
+    padding-top:0px;
+    display: block;
+}
+
+.chart-wrap .grid{
+    margin-left:50px;
+    position:relative;
+    padding:5px 0 5px 0;
+    height:100%;
+    width:100%;
+    border-left:2px solid var(--grid-color);
+}
+
+.chart-wrap .grid::before{
+    font-size:0.8em;
+    font-weight:bold;
+    content:'0%';
+    position:absolute;
+    left:-0.5em;
+    top:-1.5em;
+}
+
+.chart-wrap .grid::after{
+    font-size:0.8em;
+    font-weight:bold;
+    content:'100%';
+    position:absolute;
+    right:-1.5em;
+    top:-1.5em;
+}
+
+.chart-wrap.horizontal .grid::before, .chart-wrap.horizontal .grid::after {
+    transform: rotate(0deg);
+}
+
+.chart-wrap .bar {
+    width: var(--bar-value);
+    height:var(--bar-thickness);
+    margin:var(--bar-spacing) 0;
+    background-color:var(--bar-color);
+    border-radius:0 var(--bar-rounded) var(--bar-rounded) 0;
+}
+
+.chart-wrap .bar:hover{
+    opacity:0.7;
+}
+
+.chart-wrap .bar::after{
+    content:attr(data-name);
+    margin-left:100%;
+    padding:10px;
+    display:inline-block;
+    white-space:nowrap;
+}  
